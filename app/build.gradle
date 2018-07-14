@@ -1,9 +1,12 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 23
-    buildToolsVersion "23.0.2"
+    compileSdkVersion 26
+    buildToolsVersion  '26.0.2'
+    dexOptions {
+        javaMaxHeapSize "6g"
 
+    }
     defaultConfig {
         applicationId "com.liu.glory"
         minSdkVersion 22
